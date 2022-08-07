@@ -5,5 +5,23 @@ POST http://localhost:3000/members.json
 Content-Type: application/json
 
 {
-  "name": "Test" 
+  "name": "Test", 
+  "pet_name": "Snorky"
 }
+
+### get members show
+GET http://localhost:3000/members/3.json
+### patch members update
+PATCH http://localhost:3000/members/4.json
+Content-Type: application/json
+
+{
+  "name": "Penelope Johnson",
+  "pet_name": "Grisly",
+  "pet_type": "Jaguar",
+  "email": "penpal@gmail.com",
+  "image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/black-jaguar-ata-alishahi.jpg"
+}
+
+### delete members destroy
+DELETE http://localhost:3000/members/5

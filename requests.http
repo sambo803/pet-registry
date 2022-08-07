@@ -1,0 +1,2 @@
+### get members index
+GET http://localhost:3000/.json
